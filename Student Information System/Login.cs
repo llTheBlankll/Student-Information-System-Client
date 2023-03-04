@@ -27,11 +27,7 @@ namespace Student_Information_System
             try
             {
                 MySqlConnection connection = Connection.GetMySqlConnection();
-                
-                if (connection.State == ConnectionState.Closed)
-                {
-                    connection.Open();
-                }
+                connection.Open();
 
                 const string statement =
                     "SELECT * FROM users WHERE BINARY username = @username AND BINARY password = @password";

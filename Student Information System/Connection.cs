@@ -22,7 +22,6 @@ public abstract class Connection
 
             if (connection.State.Equals(ConnectionState.Closed))
             {
-                connection.Open();
                 return connection;
             }
         }
