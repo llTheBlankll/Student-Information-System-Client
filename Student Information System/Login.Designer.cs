@@ -1,6 +1,6 @@
 ﻿namespace Student_Information_System
 {
-    partial class Login_Form
+    partial class LoginForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -125,7 +125,7 @@
             this.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "Login_Form";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
