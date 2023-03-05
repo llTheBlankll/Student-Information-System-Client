@@ -116,6 +116,7 @@
             txtbox_retypePassword.Size =  new Size( 315, 23 ) ;
             txtbox_retypePassword.TabIndex =  2 ;
             txtbox_retypePassword.TextAlign =  HorizontalAlignment.Center ;
+            txtbox_retypePassword.KeyPress +=  txtbox_retypePassword_KeyPress ;
             // 
             // label4
             // 
