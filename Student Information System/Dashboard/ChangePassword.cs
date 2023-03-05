@@ -33,7 +33,7 @@ namespace Student_Information_System.Dashboard
 
             if (txtbox_newPassword.Text != txtbox_retypePassword.Text) {
                 MessageBox.Show(@"New Password does not match.", @"Password does not match", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return
+                return;
             }
 
             try
