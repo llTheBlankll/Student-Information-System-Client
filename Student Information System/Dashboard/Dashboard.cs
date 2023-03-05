@@ -16,5 +16,27 @@ namespace Student_Information_System.Dashboard
         {
             InitializeComponent();
         }
+
+        private void btn_logout_Click ( object sender, EventArgs e )
+        {
+
+        }
+
+        private void btn_grades_Click ( object sender, EventArgs e )
+        {
+        }
+
+        private void btn_password_Click ( object sender, EventArgs e )
+        {
+        }
+
+        private void btn_schedule_Click ( object sender, EventArgs e )
+        {
+        }
+
+        private void Dashboard_Load ( object sender, EventArgs e )
+        {
+
+        }
     }
 }
