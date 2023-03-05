@@ -31,10 +31,10 @@
             panel1 =  new Panel() ;
             label1 =  new Label() ;
             label2 =  new Label() ;
-            textBox1 =  new TextBox() ;
-            textBox2 =  new TextBox() ;
+            txtbox_currentPassword =  new TextBox() ;
+            txtbox_newPassword =  new TextBox() ;
             label3 =  new Label() ;
-            textBox3 =  new TextBox() ;
+            txtbox_retypePassword =  new TextBox() ;
             label4 =  new Label() ;
             btn_change =  new Button() ;
             btn_cancel =  new Button() ;
@@ -72,21 +72,29 @@
             label2.TabIndex =  1 ;
             label2.Text =  "Current Password" ;
             // 
-            // textBox1
+            // txtbox_currentPassword
             // 
-            textBox1.BorderStyle =  BorderStyle.FixedSingle ;
-            textBox1.Location =  new Point( 37, 126 ) ;
-            textBox1.Name =  "textBox1" ;
-            textBox1.Size =  new Size( 315, 32 ) ;
-            textBox1.TabIndex =  2 ;
+            txtbox_currentPassword.Font =  new Font( "FantasqueSansMono NFM", 12F, FontStyle.Regular, GraphicsUnit.Point ) ;
+            txtbox_currentPassword.Location =  new Point( 37, 126 ) ;
+            txtbox_currentPassword.MaxLength =  32 ;
+            txtbox_currentPassword.Name =  "txtbox_currentPassword" ;
+            txtbox_currentPassword.PasswordChar =  '*' ;
+            txtbox_currentPassword.PlaceholderText =  "Enter your Current Password" ;
+            txtbox_currentPassword.Size =  new Size( 315, 23 ) ;
+            txtbox_currentPassword.TabIndex =  0 ;
+            txtbox_currentPassword.TextAlign =  HorizontalAlignment.Center ;
             // 
-            // textBox2
+            // txtbox_newPassword
             // 
-            textBox2.BorderStyle =  BorderStyle.FixedSingle ;
-            textBox2.Location =  new Point( 37, 199 ) ;
-            textBox2.Name =  "textBox2" ;
-            textBox2.Size =  new Size( 315, 32 ) ;
-            textBox2.TabIndex =  4 ;
+            txtbox_newPassword.Font =  new Font( "FantasqueSansMono NFM", 12F, FontStyle.Regular, GraphicsUnit.Point ) ;
+            txtbox_newPassword.Location =  new Point( 37, 199 ) ;
+            txtbox_newPassword.MaxLength =  32 ;
+            txtbox_newPassword.Name =  "txtbox_newPassword" ;
+            txtbox_newPassword.PasswordChar =  '*' ;
+            txtbox_newPassword.PlaceholderText =  "Enter your New Password" ;
+            txtbox_newPassword.Size =  new Size( 315, 23 ) ;
+            txtbox_newPassword.TabIndex =  1 ;
+            txtbox_newPassword.TextAlign =  HorizontalAlignment.Center ;
             // 
             // label3
             // 
@@ -97,13 +105,17 @@
             label3.TabIndex =  3 ;
             label3.Text =  "New Password" ;
             // 
-            // textBox3
+            // txtbox_retypePassword
             // 
-            textBox3.BorderStyle =  BorderStyle.FixedSingle ;
-            textBox3.Location =  new Point( 37, 270 ) ;
-            textBox3.Name =  "textBox3" ;
-            textBox3.Size =  new Size( 315, 32 ) ;
-            textBox3.TabIndex =  6 ;
+            txtbox_retypePassword.Font =  new Font( "FantasqueSansMono NFM", 12F, FontStyle.Regular, GraphicsUnit.Point ) ;
+            txtbox_retypePassword.Location =  new Point( 37, 270 ) ;
+            txtbox_retypePassword.MaxLength =  32 ;
+            txtbox_retypePassword.Name =  "txtbox_retypePassword" ;
+            txtbox_retypePassword.PasswordChar =  '*' ;
+            txtbox_retypePassword.PlaceholderText =  "Re-type your New Password" ;
+            txtbox_retypePassword.Size =  new Size( 315, 23 ) ;
+            txtbox_retypePassword.TabIndex =  2 ;
+            txtbox_retypePassword.TextAlign =  HorizontalAlignment.Center ;
             // 
             // label4
             // 
@@ -127,6 +139,7 @@
             btn_change.TabIndex =  7 ;
             btn_change.Text =  "Submit" ;
             btn_change.UseVisualStyleBackColor =  false ;
+            btn_change.Click +=  btn_change_Click ;
             // 
             // btn_cancel
             // 
@@ -141,6 +154,7 @@
             btn_cancel.TabIndex =  8 ;
             btn_cancel.Text =  "Cancel" ;
             btn_cancel.UseVisualStyleBackColor =  false ;
+            btn_cancel.Click +=  btn_cancel_Click ;
             // 
             // ChangePassword
             // 
@@ -151,11 +165,11 @@
             ControlBox =  false ;
             Controls.Add( btn_cancel );
             Controls.Add( btn_change );
-            Controls.Add( textBox3 );
+            Controls.Add( txtbox_retypePassword );
             Controls.Add( label4 );
-            Controls.Add( textBox2 );
+            Controls.Add( txtbox_newPassword );
             Controls.Add( label3 );
-            Controls.Add( textBox1 );
+            Controls.Add( txtbox_currentPassword );
             Controls.Add( label2 );
             Controls.Add( panel1 );
             Font =  new Font( "Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point ) ;
@@ -174,10 +188,10 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtbox_currentPassword;
+        private TextBox txtbox_newPassword;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtbox_retypePassword;
         private Label label4;
         private Button btn_change;
         private Button btn_cancel;

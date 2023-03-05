@@ -16,5 +16,14 @@ namespace Student_Information_System.Dashboard
         {
             InitializeComponent();
         }
+
+        private void btn_change_Click ( object sender, EventArgs e )
+        {
+
+        }
+
+        private void btn_cancel_Click ( object sender, EventArgs e )
+        {
+        }
     }
 }
