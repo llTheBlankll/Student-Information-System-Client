@@ -1,6 +1,6 @@
 ﻿namespace Student_Information_System.Dashboard
 {
-    partial class Schedule
+    partial class Grades
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             SuspendLayout();
             // 
-            // Schedule
+            // Grades
             // 
             AutoScaleDimensions =  new SizeF( 7F, 15F ) ;
             AutoScaleMode =  AutoScaleMode.Font ;
             ClientSize =  new Size( 800, 450 ) ;
-            Name =  "Schedule" ;
+            Name =  "Grades" ;
             StartPosition =  FormStartPosition.CenterScreen ;
-            Text =  "Schedule" ;
+            Text =  "Grades" ;
             ResumeLayout( false );
         }
 
