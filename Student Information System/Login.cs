@@ -13,13 +13,13 @@ namespace Student_Information_System
         {
             if ( this.txtbox_username.Text.Equals( "" ) )
             {
-                MessageBox.Show( @"Username field cannot be empty.", "", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                MessageBox.Show( @"Username field cannot be empty.", @"Empty Field", MessageBoxButtons.OK, MessageBoxIcon.Error );
                 return;
             }
 
             if ( this.txtbox_password.Text.Equals( "" ) )
             {
-                MessageBox.Show( @"Username field cannot be empty.", "", MessageBoxButtons.OK, MessageBoxIcon.Error );
+                MessageBox.Show( @"Username field cannot be empty.", @"Empty Field", MessageBoxButtons.OK, MessageBoxIcon.Error );
                 return;
             }
 
