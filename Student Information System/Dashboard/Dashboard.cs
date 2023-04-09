@@ -32,7 +32,7 @@ namespace Student_Information_System.Dashboard
         private void btn_password_Click ( object sender, EventArgs e )
         {
             new ChangePassword().ShowDialog();
-        }
+       }
 
         private void btn_schedule_Click ( object sender, EventArgs e )
         {

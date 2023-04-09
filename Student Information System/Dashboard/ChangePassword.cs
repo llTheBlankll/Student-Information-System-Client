@@ -26,13 +26,15 @@ namespace Student_Information_System.Dashboard
                 return;
             }
 
-            if ( txtbox_retypePassword.Text == "") {
-                MessageBox.Show(@"Type your password again.", @"Password is not the same", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if ( txtbox_retypePassword.Text == "" )
+            {
+                MessageBox.Show( @"Type your password again.", @"Password is not the same", MessageBoxButtons.OK, MessageBoxIcon.Error );
                 return;
             }
 
-            if (txtbox_newPassword.Text != txtbox_retypePassword.Text) {
-                MessageBox.Show(@"New Password does not match.", @"Password does not match", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if ( txtbox_newPassword.Text != txtbox_retypePassword.Text )
+            {
+                MessageBox.Show( @"New Password does not match.", @"Password does not match", MessageBoxButtons.OK, MessageBoxIcon.Error );
                 return;
             }
 
@@ -42,7 +44,7 @@ namespace Student_Information_System.Dashboard
                 if ( is_valid() )
                 {
                     // Check if the current password is the same as the new password.
-                    if (txtbox_currentPassword.Text == txtbox_newPassword.Text )
+                    if ( txtbox_currentPassword.Text == txtbox_newPassword.Text )
                     {
                         MessageBox.Show( "Current Password should not be the same as the New Password.", "Same Password not allowed", MessageBoxButtons.OK, MessageBoxIcon.Error );
                         return;
@@ -79,7 +81,6 @@ namespace Student_Information_System.Dashboard
             if ( e.KeyChar == (char) Keys.Enter )
             {
                 btn_change.PerformClick();
-                
             }
         }
 
